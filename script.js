@@ -12,5 +12,8 @@ new L.GPX(gpx, {
         startIconUrl: '',
         endIconUrl: '',
         shadowUrl: ''
+        },
+    gpx_options: {
+        joinTrackSegments: false
         }
 }).on('loaded').addTo(map);
