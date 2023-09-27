@@ -8,6 +8,11 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var gpx = 'gpx/route_1_alex_tincave.gpx'; // Vervang dit met de naam van je GPX-bestand
 new L.GPX(gpx, {
     async: true,
+    marker_options: {
+        startIconUrl: 'https://cdn.jsdelivr.net/npm/leaflet-gpx@1.7.0/pin-icon-start.png',
+        endIconUrl: 'https://cdn.jsdelivr.net/npm/leaflet-gpx@1.7.0/pin-icon-end.png',
+        shadowUrl: 'https://cdn.jsdelivr.net/npm/leaflet-gpx@1.7.0/pin-shadow.png'
+      }
 }).on('loaded', function (e) {
     map.fitBounds(e.target.getBounds());
 }).addTo(map);
