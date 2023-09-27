@@ -1,4 +1,4 @@
-var map = L.map('map').setView([51.505, -0.09], 3); // Stel het beginweergavepunt en de zoomniveau in
+var map = L.map('map').setView([51.505, -0.09], 4); // Stel het beginweergavepunt en de zoomniveau in
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
