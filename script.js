@@ -15,3 +15,13 @@ new L.GPX(gpx, {
         }
 }).on('loaded').addTo(map);
 
+// Voeg de GPX-track toe aan de kaart
+var gpx = 'gpx/route_2_italiaanse_alpen.gpx'; // Vervang dit met de naam van je GPX-bestand
+new L.GPX(gpx, {
+    async: true,
+    marker_options: {
+        startIconUrl: '',
+        endIconUrl: '',
+        shadowUrl: ''
+        }
+}).on('loaded').addTo(map);
