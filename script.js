@@ -5,7 +5,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Voeg de GPX-track toe aan de kaart
-var gpx = 'jouw_gpx_bestand.gpx'; // Vervang dit met de naam van je GPX-bestand
+var gpx = 'gpx/route_1_alex_tincave.gpx'; // Vervang dit met de naam van je GPX-bestand
 new L.GPX(gpx, {
     async: true,
 }).on('loaded', function (e) {
