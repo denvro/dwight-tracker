@@ -13,7 +13,5 @@ new L.GPX(gpx, {
         endIconUrl: '',
         shadowUrl: ''
         }
-}).on('loaded', function (e) {
-    map.fitBounds(e.target.getBounds());
-}).addTo(map);
+}).on('loaded').addTo(map);
 
