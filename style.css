@@ -1,0 +1,99 @@
+/* style.css */
+
+/* =================================== */
+/* 1. Basis Layout & Kaart             */
+/* =================================== */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+/* =================================== */
+/* 2. Algemene Popup Styling           */
+/* =================================== */
+
+/* De buitenste container van de popup */
+.leaflet-popup-content-wrapper {
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* De daadwerkelijke content binnen de popup */
+.leaflet-popup-content {
+    margin: 15px 20px;
+    line-height: 1.5;
+    width: 320px !important; /* Vaste breedte op desktop */
+}
+
+/* =================================== */
+/* 3. Popup Content Styling            */
+/* =================================== */
+
+.popup-header h3 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.popup-header p {
+    margin: 0 0 15px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.info-lijst {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.info-lijst li {
+    padding: 6px 0; /* Iets meer ruimte */
+    border-bottom: 1px solid #e9ecef; /* Subtiele scheidingslijn */
+}
+
+.info-lijst li:last-child {
+    border-bottom: none;
+}
+
+.info-lijst strong {
+    color: #343a40; /* Iets donkerder voor beter contrast */
+}
+
+/* =================================== */
+/* 4. GPX Marker & Iconen              */
+/* =================================== */
+
+.gpx-marker {
+    background: none;
+    border: none;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    font-size: 48px;
+}
+
+/* =================================== */
+/* 5. Responsive Styling voor Mobiel   */
+/* =================================== */
+
+@media (max-width: 768px) {
+    .leaflet-popup-content {
+        width: 85vw !important; /* Maak de popup breder op mobiele schermen */
+    }
+
+    .popup-header h3 {
+        font-size: 1.2em; /* Grotere titel op mobiel */
+    }
+}
