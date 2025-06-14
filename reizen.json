@@ -1,0 +1,26 @@
+[
+  {
+    "titel": "Alex's Tincave",
+    "datum": "juni 2025",
+    "gpxBestand": "gpx/route_1_alex_tincave.gpx",
+    "info": {
+      "Afstand": "150 km",
+      "Hoogteverschil": "1500m",
+      "Duur": "2 dagen",
+      "Weer": "Zonnig, 22°C",
+      "Opmerkingen": "De route was uitdagender dan verwacht, vooral het laatste stuk."
+    }
+  },
+  {
+    "titel": "Italiaanse Alpen",
+    "datum": "Juni 2025",
+    "gpxBestand": "gpx/route_2_italiaanse_alpen.gpx",
+    "info": {
+      "Afstand": "450 km",
+      "Hoogteverschil": "750m",
+      "Duur": "1,5 dagen",
+      "Weer": "Wisselvallig, met regen in de middag",
+      "Opmerkingen": "Prachtige uitzichten. De Stelviopas is een aanrader."
+    }
+  }
+]
